@@ -154,4 +154,7 @@ def test
   game = Game.new("X", "O")
   game.new_game
 end
+ranges = [*("A".."Z"), *("0".."9")].flatten.join
+symbols = "!@#$%^&*()-_=+[]{}|;:',.<>/?`~}#{ranges}".delete("5")
+p symbols.split("").sample
 test

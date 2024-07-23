@@ -1,2 +1,0 @@
-class Ai
-end
